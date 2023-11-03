@@ -23,7 +23,7 @@ class BitacoraFactory extends Factory
             'bitacora'=>fake()->text(),
             'fecha'=>fake()->date(),
             'hora'=>fake()->time(),
-            'ip'=>fake()->random_int(),
+            'ip'=>fake()->numberBetween(123456, 234567),
             'so'=>fake()->word(),
             'navegador'=>fake()->word(),
             'usuario'=>fake()->firstName()

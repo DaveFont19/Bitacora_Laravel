@@ -17,7 +17,7 @@ return new class extends Migration
             $table->unsignedBigInteger('id_rol');
             $table->string('usuario');
             $table->string('clave');
-            $table->enum('habilitado', ['activos', 'inactivo'] );
+            $table->enum('habilitado', ['activo', 'inactivo'] );
             $table->date('fecha');
             $table->foreign('id_persona')->references('id')->on('personas')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('id_rol')->references('id')->on('rols')->onDelete('cascade')->onUpdate('cascade');

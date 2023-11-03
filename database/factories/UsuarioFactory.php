@@ -20,8 +20,8 @@ class UsuarioFactory extends Factory
     {
 
         return [
-            'id_persona'=>Persona::inRnadomOrder()->first()->id,
-            'id_rol'=>Rol::inRandomOrder()->fisrt()->id,
+            'id_persona'=>Persona::inRandomOrder()->first()->id,
+            'id_rol'=>Rol::inRandomOrder()->first()->id,
             'usuario'=>fake()->name(),
             'clave'=>fake()->randomDigit(),
             'habilitado'=>fake()->randomElement(['activo', 'inactivo']),

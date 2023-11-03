@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('primer_nombre');
             $table->string('segundo_nombre');
-            $table->string('primer_apelldio');
+            $table->string('primer_apellido');
             $table->string('segundo_apellido');
             $table->timestamps();
         });
